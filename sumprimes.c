@@ -28,6 +28,10 @@ int sumPrimes(int num)
     int sum = 0;
     for (int i = num; i >= 2; i--)
     {
-
+        if(isPrime(i))
+        {
+            sum += i;
+        }
     }
+    return sum;
 }
